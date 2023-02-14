@@ -94,6 +94,16 @@ export default class SearchScreen extends Component {
     );
   };
 
+//cria a função de procurar um livro especifico
+
+handleSearch = async text => {
+
+
+
+
+
+
+}
   
   render() {
     const { searchText, allTransactions } = this.state;
@@ -115,11 +125,7 @@ export default class SearchScreen extends Component {
           </View>
         </View>
         <View style={styles.lowerContainer}>
-          <FlatList
-            data={allTransactions}
-            renderItem={this.renderItem}
-            keyExtractor={(item, index) => index.toString()}
-          />
+       // crie a FlatList
         </View>
       </View>
     );
