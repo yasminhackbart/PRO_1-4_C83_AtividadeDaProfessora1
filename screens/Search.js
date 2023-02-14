@@ -93,6 +93,15 @@ export default class SearchScreen extends Component {
       </View>
     );
   };
+  
+  // crie a função de procurar um livro especifico
+  
+  handleSearch= async text => {
+  
+  
+  
+  
+  }
 
   
   render() {
@@ -115,11 +124,12 @@ export default class SearchScreen extends Component {
           </View>
         </View>
         <View style={styles.lowerContainer}>
-          <FlatList
-            data={allTransactions}
-            renderItem={this.renderItem}
-            keyExtractor={(item, index) => index.toString()}
-          />
+          // crie a FlatList
+          
+          
+          
+          
+          
         </View>
       </View>
     );
