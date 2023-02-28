@@ -5,7 +5,6 @@ import {
   TextInput,
   TouchableOpacity,
   Text,
-  FlatList
 } from "react-native";
 import { Avatar, ListItem, Icon } from "react-native-elements";
 import db from "../config";
@@ -14,24 +13,15 @@ export default class SearchScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      allTransactions: [],
-      searchText: ""
+   
     };
   }
   componentDidMount = async () => {
-    this.getTransactions();
+
   };
 
   getTransactions = () => {
-    db.collection("transactions")
-      .get()
-      .then(snapshot => {
-        snapshot.docs.map(doc => {
-          this.setState({
-            allTransactions: [...this.state.allTransactions, doc.data()],
-          });
-        });
-      });
+  
   };
 
   
